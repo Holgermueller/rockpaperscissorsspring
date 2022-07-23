@@ -10,7 +10,19 @@
   <body>
     <h1 class="header">Rock | Paper | Scissors</h1>
 
-    <h2>Would you like to play?</h2>
-    <a th:href="@{~/game}">YES!</a>
+    <!-- <form action="#" th:action="@{/}" th:object="${game}" method="post">
+      <p>Choose R)ock, P)aper, or S)cissors:</p>
+      <p>Your choice: <input type="text" th:field="*{userInput}" /></p>
+      <input type="submit" value="Submit" />
+    </form>
+
+    <div>
+      <p th:text=" 'userInput: ' + ${game.userInput} ">You chose:</p>
+      <p>The computer chose:</p>
+
+      <p>The winner:</p>
+
+      <p></p>
+    </div> -->
   </body>
 </html>
