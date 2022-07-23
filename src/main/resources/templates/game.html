@@ -10,14 +10,14 @@
   <body>
     <h1 class="header">Rock | Paper | Scissors</h1>
 
-    <!-- <form action="#" th:action="@{/}" th:object="${game}" method="post">
+    <form action="#" th:action="@{/game}" th:object="${game}" method="post">
       <p>Choose R)ock, P)aper, or S)cissors:</p>
-      <p>Your choice: <input type="text" th:field="*{userInput}" /></p>
+      <p>Your choice: <input type="text" th:field="*{userChoice}" /></p>
       <input type="submit" value="Submit" />
     </form>
 
-    <div>
-      <p th:text=" 'userInput: ' + ${game.userInput} ">You chose:</p>
+    <!-- <div>
+      <p th:text=" 'userInput: ' + ${game.userChoice} ">You chose:</p>
       <p>The computer chose:</p>
 
       <p>The winner:</p>
