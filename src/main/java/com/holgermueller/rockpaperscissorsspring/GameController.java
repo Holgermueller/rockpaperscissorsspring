@@ -15,10 +15,10 @@ public class GameController {
         return "game";
     }
 
-    // @PostMapping("/game")
-    // public String gameSubmit(@ModelAttribute Game game, Model model) {
-    // model.addAttribute("game", game);
-    // return game;
-    // }
+    @PostMapping("/game")
+    public String gameSubmit(@ModelAttribute Game game, Model model) {
+        model.addAttribute("game", game);
+        return "game";
+    }
 
 }
